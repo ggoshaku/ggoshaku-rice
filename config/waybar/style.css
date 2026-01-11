@@ -1,0 +1,93 @@
+* {
+	font-family: JetBrainsMono NF, "Font Awesome 7 Free"; font-size: 15px;
+}
+
+window#waybar {
+	background-color: rgba(0, 0, 0, 0);
+	font-weight: bold;
+}
+
+#clock.time,
+#clock.date,
+#tray,
+#language,
+#pulseaudio,
+#battery,
+#upower,
+#cpu,
+#memory,
+#network,
+#custom-power {
+	color: #fcd5f0;
+}
+
+#custom-fuck {
+	background-image: url('/home/ggosh/Downloads/tfw/monsterlogo-blue.png');
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+	min-width: 19px;
+  min-height: 19px;
+  padding: 2 5px;
+}
+
+#custom-stitch {
+	background-image: url('/home/ggosh/Downloads/tfw/dancing-stitch.png');
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+	min-width: 19px;
+  min-height: 19px;
+  padding: 2 5px;
+}
+
+#custom-lfresh {
+	background-image: url('/home/ggosh/Downloads/tfw/appa.png');
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+	min-width: 19px;
+  min-height: 19px;
+  padding: 2 5px;
+}
+
+#workspaces {
+	color: #fcd5f0;
+	font-weight: bold;
+}
+
+#workspaces button {
+	color: #fcd5f0;
+	all: initial;
+	margin-right: 0.2cm;
+	margin-left: 0.2cm;
+}
+
+#workspaces button:hover {
+	color: #00FEFF;
+	font-weight: bold;
+}
+
+#clock.time:hover ,
+#clock.date:hover ,
+#language:hover ,
+#pulseaudio:hover ,
+#battery:hover ,
+#upower:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#custom-power:hover { 
+	color: #4ebac2;
+}
+
+#workspaces button.active {
+	/*color: #89df77;*/
+	color: #00de76;
+	font-weight: bold;
+}
+
+#workspaces button.urgent {
+	color: #ff3e71;
+	font-weight: bold;
+}

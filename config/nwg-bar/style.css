@@ -1,0 +1,39 @@
+window {
+	background-color: rgba (0, 0, 0, 0)
+}
+
+/* Outer bar container, takes all the window width/height */
+#outer-box {
+	margin: 0px
+}
+
+/* Inner bar container, surrounds buttons */
+#inner-box {
+	background-color: rgba (0, 0, 0, 0.5);
+	border-radius: 20px;
+	border-style: none;
+	padding: 5px;
+	margin: 5px
+}
+
+button, image {
+	background: none;
+	border: none;
+	box-shadow: none;
+	min-width: 96px;
+  min-height: 800px;
+}
+
+button {
+	font-family: ITCKabel-Demi;
+	color: rgb (255, 255, 255);			
+	padding: 30px;
+  margin: 20px;
+  font-size: 18px;
+  /* min-width: 150px; */
+  /* min-height: 150px; */
+}
+
+button:hover {
+	background-color: rgba (255, 255, 255, 0.1)
+}

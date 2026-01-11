@@ -1,0 +1,96 @@
+{
+	"layer": "bot",
+	"position": "top",
+	"spacing": 10,
+	"margin-right": 5,
+
+	"modules-left": ["hyprland/workspaces"],
+	"modules-center": ["custom/stitch", "clock#date", "clock#time", "custom/lfresh"],
+	"modules-right": ["tray", "hyprland/language", "network", "pulseaudio", "upower"],
+
+	"hyprland/workspaces": {
+		"all-outputs": false,
+		"tooltip": false
+	},
+
+	"clock#date": {
+		"format": "{:%a %d %b}",
+		"tooltip-format": "{calendar}"
+	},
+
+	"clock#time": {
+		"format": "{:%I:%M}",
+		"interval": 1,
+		"tooltip-format": "{:%I:%M:%S}"
+	},
+
+	"tray": {
+		"spacing": 10
+	},
+
+	"hyprland/language": {
+		"format": "<span face='Font Awesome 7 Free'> </span>{short}",
+		"on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
+		"tooltip": true
+	},
+
+	"pulseaudio": {
+		"scroll-step": 5,
+		"max-volume": 100,
+		"format": "<span face='Font Awesome 7 Free'>{icon}</span> {volume}%",
+		"format-icons": [ "", "", ""],
+		"format-muted": "",
+		"on-click": "pavucontrol",
+		"tooltip": true
+	},
+
+	"custom/power": {
+		"format": "<span face='Font Awesome 7 Free'></span>",
+		"on-click": "nwg-bar -f -i 300 -p center",
+		"tooltip-format": "секретка"
+	},
+
+	"upower": {
+		"format": " {percentage}",
+		"icon-size": 14,
+		"tooltip": true,
+		"tooltip-spacing": 10,
+		"tooltip-padding": 1
+	},
+
+	"cpu": {
+		"interval": 2,
+		"format": " {usage}%"
+	},
+
+	"memory": {
+		"interval": 2,
+		"format": " {used}G",
+		"tooltip-format": "{percentage}%"
+	},
+
+	"network": {
+		"format-wifi": "  {bandwidthDownBits}",
+		"format-disconnected": "No Network",
+		"interval": 2,
+		"tooltip": false
+	},
+
+	"custom/fuck": {
+		"format": " ",
+		"on-click": "nwg-bar -i 300",
+		"tooltip-format": "えええええええ"
+	},	
+
+	"custom/stitch": {
+		"format": " ",
+		"on-click": "nwg-bar -f -i 300 -p center",
+		"tooltip-format": "私と一緒に踊りましょう！"
+	},
+
+	"custom/lfresh": {
+		"format": " ",
+		"on-click": "nwg-bar -f -i 300 -p center",
+		"tooltip-format": "いいえ、サラダわおいちじゃないです。"
+	}	
+}
