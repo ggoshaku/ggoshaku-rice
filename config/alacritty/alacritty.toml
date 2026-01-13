@@ -1,0 +1,16 @@
+
+[window]
+padding.x = 10
+padding.y = 10
+
+opacity = 0.3
+
+[font]
+normal.family = "JetBrainsMono NF"
+
+size = 15
+
+[general]
+import = [
+  "~/.config/alacritty/themes/themes/coolnight.toml"
+]
